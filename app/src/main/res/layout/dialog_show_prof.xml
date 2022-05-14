@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView_picture"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_margin="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        android:background="@color/common_google_signin_btn_text_dark_disabled"/>
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView_picture"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Nom Prenom"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/textView_depart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/imageView_picture"
+        app:layout_constraintTop_toBottomOf="@+id/textView_name"
+        android:text="Departement X"
+        android:textSize="15sp"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_picture"/>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <Button
+            android:id="@+id/button_appel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="1dp"
+            android:text="Appel"
+            app:icon="@drawable/ic_baseline_call_24"
+            app:iconGravity="top"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/button_sms"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="1dp"
+            android:text="SMS"
+            app:icon="@drawable/ic_baseline_sms_24"
+            app:iconGravity="top"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll1">
+
+        <Button
+            android:id="@+id/button_wtsp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="1dp"
+            android:text="WhatsApp"
+            app:icon="@drawable/ic_baseline_whatsapp_24"
+            app:iconGravity="top"
+            android:textSize="11sp"
+            android:backgroundTint="#25D366" />
+
+        <Button
+            android:id="@+id/button_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="1dp"
+            android:text="Email"
+            app:icon="@drawable/ic_baseline_email_24"
+            app:iconGravity="top"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/button_list_etud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/blue_700"
+            android:drawableTop="@drawable/etud"
+            android:padding="10dp"
+            android:text="La liste des étudiants" />
+
+        <Button
+            android:id="@+id/button_list_prof"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@color/red_700"
+            android:drawableTop="@drawable/prof"
+            android:padding="10dp"
+            android:text="La liste des professeurs" />
+
+        <Button
+            android:id="@+id/button_signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Se déconnecter"
+            app:iconGravity="start" />
+
+    </LinearLayout>
+
+</RelativeLayout>
